@@ -4,16 +4,16 @@ public class Main {
         h.setName("ミナト");
         int n = h.getHp();
         h.setHp(40);
+        King k = new King();
+        Inn i = new Inn();
+        Matango m = new Matango();
+        m.setSuffix('A');
 
         System.out.println(h.getName() + "の現在のHP：" + h.getHp());
-        King k = new King();
         k.talk(h);
-        Inn i = new Inn();
         i.checkIn(h);
         System.out.println(h.getName() + "の現在のHP：" + h.getHp());
         h.sleep();
-        Matango m = new Matango();
-        m.setSuffix('A');
         h.attack(m);
     }
 }
