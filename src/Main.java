@@ -13,7 +13,7 @@ public class Main {
         System.out.println(h.getName() + "の現在のHP：" + h.getHp());
         h.sleep();
         Matango m = new Matango();
-        m.suffix = 'A';
+        m.setSuffix('A');
         h.attack(m);
     }
 }
