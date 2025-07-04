@@ -22,6 +22,9 @@ public class Hero {
         this.name = name;
     }
     public void setHp(int hp) {// 妥当性チェック
+        if (hp <= 0) {
+            throw new IllegalArgumentException("HPがない。処理を中断。");
+        }
         this.hp = hp;
     }
     void bye() {
